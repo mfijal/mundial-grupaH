@@ -26,7 +26,14 @@
 					</div>
 				</div>
 				<div class="nav"> 
-						Ranking FIFA Eliminacje Składy (Polska-Kolumbia-Senegal-Japonia) Terminarz Tabela Stadiony 
+						<ol>
+								<li><a href="#">Strona główna</a></li>
+								<li><a href="#">Aktualności</a></li>
+								<li><a href="#">Zespoły</a></li>
+								<li><a href="#">Terminarz</a></li>
+								<li><a href="#">Stadiony</a></li>
+								<li><a href="#">Tabela</a></li>
+						</ol>
 				</div>
 				<div class="content">
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquet quam massa, et dignissim sapien luctus sed. Ut vitae arcu non ex iaculis rutrum. Donec est enim, placerat vitae lorem ac, mattis scelerisque massa. Sed a luctus dolor. Sed non dolor faucibus, suscipit metus et, interdum mauris. Proin ornare diam et sem blandit, non pellentesque enim tempus. Donec cursus dapibus ornare. </p>
@@ -53,8 +60,32 @@
 					</div>
 				</div>
 				<div class="footer">
-						2018 &copy; Wszelkie prawa zastrzeżone!
+						2018 &copy;veil (Wszelkie prawa zastrzeżone!)
 				</div>
 			</div>
+			<script src="jquery-3.3.1.min.js"></script>
+				<script>
+						$(document).ready(function() {
+						var NavY = $('.nav').offset().top;
+						 
+						var stickyNav = function(){
+						var ScrollY = $(window).scrollTop();
+							  
+						if (ScrollY > NavY) { 
+							$('.nav').addClass('sticky');
+						} else {
+							$('.nav').removeClass('sticky'); 
+						}
+						};
+						 
+						stickyNav();
+						 
+						$(window).scroll(function() {
+							stickyNav();
+						});
+						});
+				</script>
+			
+			
 	</body>
 </html>
