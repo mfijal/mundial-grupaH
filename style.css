@@ -1,0 +1,108 @@
+body
+	{
+		background-color: #303030;
+		color: #ffffff;
+		font-family: 'Lato', sans-serif;
+		font-size: 20px;
+		margin: 0 !important; /*ZERO marginesów, aby przeglądarka wiedziała, że jest to WAŻNE*/
+	}
+.wrapper
+	{
+		width: 100%;
+		order: 5px solid yellow; /*uciąłem b i ta linijka jest martwa*/
+	}
+
+.header
+	{
+		width: 100%;	
+		padding: 25px 0; /*to jest odstęp WEWNĄTRZ diva header w pionie po 25px a drugi parametr wyzerowany bo header jest na CAŁĄ szerokość witryny*/
+		order: 3px solid #ffffff; /*uciąłem b i ta linijka jest martwa*/
+	}
+.logo
+	{
+		width: 470px;
+		font-size: 53px;
+		border: 1px solid #ffffff;
+		margin-left: auto;
+		margin-right: auto;	
+	}
+.nav
+	{
+		width: 100%;	
+		padding: 10px 0; 
+		background-color: #ff0000; /*on wstawiał kolor #c34f4f a ja CZERWIEŃ YouTube*/
+		text-align: center; 
+		border-top: 2px solid #751b1b;
+		border-bottom: 2px solid #751b1b;
+		height: 40px;
+	}
+.content
+	{
+		width: 1000px;
+		margin-left: auto;
+		margin-right: auto;	
+		text-align: justify; 
+		padding-top: 15px;
+	}
+.socials
+	{
+		width: 100%;
+		text-align: center; 
+		background-color: #292929;		
+	}
+.socialdivs
+	{
+		width: 1000px;
+		margin-left: auto;
+		margin-right: auto;			
+		text-align: center; 
+		background-color: #292929;		
+	}
+.fifa
+	{
+		width: 250px;
+		height: 155px;
+	}
+.fifa:hover
+	{
+		background-color: #ffde17;
+		color: #000000;	
+	}
+.fb
+	{
+		width: 250px;
+		height: 155px;
+	}
+.fb:hover
+	{
+		background-color: #3b5998;
+		color: #000000;	
+	}
+.yt
+	{
+		width: 250px;
+		height: 155px;
+	}
+.yt:hover
+	{
+		background-color: #d94348;
+		color: #000000;	
+	}
+.insta
+	{
+		width: 250px;
+		height: 155px;
+	}
+.insta:hover
+	{
+		background-color: #8a3ab9;
+		color: #000000;	
+	}
+.footer
+	{
+		text-align: center; 
+		padding: 35px; 	
+		margin-left: auto;
+		margin-right: auto;	
+		background-color: #222222;
+	}
