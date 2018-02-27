@@ -35,6 +35,7 @@ body
 		border-top: 2px solid #751b1b;
 		border-bottom: 2px solid #751b1b;
 		height: 40px;
+		order: 3px solid #ffffff; /*uciąłem b i ta linijka jest martwa*/
 	}
 .content
 	{
@@ -43,6 +44,7 @@ body
 		margin-right: auto;	
 		text-align: justify; 
 		padding-top: 15px;
+		order: 5px solid yellow; /*uciąłem b i ta linijka jest martwa*/		
 	}
 .socials
 	{
@@ -122,7 +124,69 @@ ol
 		font-size: 18px;
 		height: 35px;
 		line-height: 200%;
+		display: inline-block;
 	}
+ol a
+	{
+		color: #ffffff;
+		text-decoration: none;
+		display: block;
+	}
+ol > li
+	{
+		float: left;
+		width: 150px;
+		height: 40px;
+		border-right: 2px dashed #751b1b;
+	}			
+ol > li:first-child
+	{
+		border-left: 2px dashed #751b1b;
+	}		
+ol > li:hover
+	{
+		background-color: #ff4444;
+	}		
+ol > li:hover > a
+	{
+		color: #751b1b;
+	}		
+ol > li > ul	
+	{
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+		height: 40px;
+		display: none; /*to odpowiada za "zniknięcie rozwijanego menu", które wpisujemy na sztywno*/
+	}
+ol > li:hover > ul /*ta sekcja odpowiada za POKAZYWANIE się rozwijanego menu - jako opcja listy potomka "ul" tegoż najechanego "li"*/ 
+	{
+		display: block;
+	}		
+ol > li > ul	> li
+	{
+		background-color: #ff4444;
+		position: relative;
+		z-index: 100;
+		border-top: 2px dashed #751b1b;
+	}
+ol > li > ul	> li:hover
+	{
+		background-color: #ff0000; /*ten kolor w sumie można zlikwidować bo komórka wyróżnia się i tak czcionką - kwestia gustu*/
+	}
+ol > li > ul	> li:hover > a
+	{
+		color: #751b1b;
+	}
+		
+		
+		
+		
+		
+		
+		
+		
+	
 	
 	
 	
