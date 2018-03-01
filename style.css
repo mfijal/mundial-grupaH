@@ -40,7 +40,7 @@
 .content
 	{
 		width: 1000px;
-		min-height: 450px;
+		min-height: 1000px;
 		margin-left: auto;
 		margin-right: auto;	
 		text-align: justify; 
@@ -197,3 +197,42 @@ a:visited
 		color: white;
 		text-decoration: none;
 	}
+.country
+	{
+		width: 970px;
+		min-height: 250px; /* jeśli jest mało treści ale będą wszystkie 4 reprezentacje to zmniejszyć do 400px bo nie ma sensu takie puste pola umieszczać na stronie */
+		padding-top: 10px;
+		order: 2px solid blue; /*uciąłem b i ta linijka jest martwa*/	
+	}
+.flag
+	{
+		width: 140px;
+		height: 200 px;
+		padding-top: 50px;
+		padding-left: 10px;
+		
+	}
+.team
+	{
+		width: 650px;
+		min-height: 300px;
+		padding-top: 10px;
+		padding-left: 10px;
+		text-align: left;
+		font-size: 16px;
+		order: 2px solid yellow; /*uciąłem b i ta linijka jest martwa*/	
+	}
+.coach
+	{
+		width: 150px;
+		height: 100 px;
+		font-size: 13px;
+		text-align: center;
+		padding: 1px;
+		order: 2px solid red; /*uciąłem b i ta linijka jest martwa*/	
+	}
+
+	
+	
+	
+	
